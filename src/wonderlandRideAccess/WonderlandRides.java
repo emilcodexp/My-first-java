@@ -1,6 +1,6 @@
-package houseData;
+package wonderlandRideAccess;
 
-public class House {
+public class WonderlandRides {
 	int age;
 	double hieght;
 	String name;
