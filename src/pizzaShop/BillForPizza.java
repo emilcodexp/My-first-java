@@ -10,7 +10,7 @@ public class BillForPizza {
 	int priceOfLPizza = 25;
 	int cheesePrice = 1;
 
-	boolean addTopping = true;
+	
 	Scanner sc = new Scanner(System.in);
 	Scanner sc1 = new Scanner(System.in);
 
