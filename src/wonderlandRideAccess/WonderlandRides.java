@@ -16,7 +16,7 @@ public class WonderlandRides {
 		}
 	}
 
-	void enteryForRedBaraon() {
+	void entryForRedBaraon() {
 		isAccessGranted = ((age >= 15) && (hieght >= 5.5));
 		if (isAccessGranted)
 			System.out.println("Red Baron : Access Granted");
@@ -25,7 +25,7 @@ public class WonderlandRides {
 		}
 	}
 
-	void enteryForswingTime() {
+	void entryForswingTime() {
 		isAccessGranted = ((age >= 18) && (hieght >= 3.5));
 		if (isAccessGranted)
 			System.out.println("Swing Time : Access Granted");

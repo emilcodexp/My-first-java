@@ -9,8 +9,8 @@ public class MainWonderRideClass {
 		wl.hieght = 5.5;
 
 		wl.entryForWaterCanyon();
-		wl.enteryForRedBaraon();
-		wl.enteryForswingTime();
+		wl.entryForRedBaraon();
+		wl.entryForswingTime();
 
 	}
 }
