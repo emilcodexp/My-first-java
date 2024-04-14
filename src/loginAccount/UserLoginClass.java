@@ -34,12 +34,10 @@ public class UserLoginClass {
 			System.out.println("You are logged into the application");
 
 		} else
-			for (int i = 0; i < 3; i++)
-
-			{
-				System.out.println("Incorrect User Id or Password. Plz Try again!!");
-			}
-
-		System.out.println("Account locked");
+			for (int i = 0; i <=3; ++i)
+				if (i == 3) {
+					System.out.println("Account locked");
+				} else
+					System.out.println("Incorrect User Id or Password. Plz Try again!!");
 	}
 }
