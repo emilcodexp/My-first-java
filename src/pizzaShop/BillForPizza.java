@@ -20,7 +20,7 @@ public class BillForPizza {
 	int cheesePrice = 1;
 
 	Scanner sc = new Scanner(System.in);
-	Scanner sc1 = new Scanner(System.in);
+	
 
 	void finalBillForPizza() {
 
@@ -32,7 +32,7 @@ public class BillForPizza {
 		case "smallpizza":
 			System.out.println("Prize is $15");
 			System.out.println("Do you need extra topping");
-			String extra = sc1.next();
+			String extra = sc.next();
 
 			if (extra.equals("yes")) {
 				System.out.println("Your final price is : $" + (priceOfSPizza + priceOfPepS + cheesePrice));
@@ -44,7 +44,7 @@ public class BillForPizza {
 		case "mediumpizza":
 			System.out.println("Prize is $20");
 			System.out.println("Do you need extra topping");
-			String extra1 = sc1.next();
+			String extra1 = sc.next();
 			if (extra1.equals("yes")) {
 				System.out.println("Your final price is : $" + (priceOfMPizza + priceOfPepL + cheesePrice));
 			} else {
@@ -55,7 +55,7 @@ public class BillForPizza {
 		case "largepizza":
 			System.out.println("Prize is $25");
 			System.out.println("Do you need extra topping");
-			String extra2 = sc1.next();
+			String extra2 = sc.next();
 			if (extra2.equals("yes")) {
 				System.out.println("Your final price is : $" + (priceOfLPizza + priceOfPepL + cheesePrice));
 			} else {

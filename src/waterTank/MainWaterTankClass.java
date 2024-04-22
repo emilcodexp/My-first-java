@@ -5,7 +5,8 @@ public class MainWaterTankClass {
 	public static void main(String[] args) {
 
 		TankCapacity tc=new TankCapacity();
-		tc.isTankFull();
+		//tc.isTankFull();
+		tc.tankOverflow();
 	}
 
 }
