@@ -21,7 +21,7 @@ public class MainBanquetClass {
 		double tipEntered = sc.nextDouble();
 
 		System.out.println("Please enter number of guests : ");
-		double noOfGuests = sc.nextDouble();
+		int numberOfGuests = sc.nextInt();
 
 		Banquet finalCost = new Banquet();
 		System.out.println("Your base cost before taxes is :$ "
@@ -30,13 +30,13 @@ public class MainBanquetClass {
 		double afterTax = finalCost.calculatetax(finalCost.totalBaseCost);
 		System.out.println("Your total tax is :$ " + afterTax);
 
-		double servCess = finalCost.calculateCess(finalCost.totalBaseCost, finalCost.noOfGuests);
+		double servCess = finalCost.calculateCess(finalCost.totalBaseCost, numberOfGuests);
 		System.out.println("Your total Service cess is :$ " + servCess);
 
 		double finalbl = finalCost.CalculateTheTotalCost(finalCost.totalBaseCost, finalCost.totalTax,
 				finalCost.serviceCess);
-		System.out.println("Your tfinal bill is : " + finalbl);
-		
+		System.out.println("Your final bill is :$ " + finalbl);
+		sc.close();
 	}
 
 }

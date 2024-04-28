@@ -39,6 +39,7 @@ public class Banquet {
 	 * and 'Banquet' class separate, use object of Banquet class to access its
 	 * methods and attributes. Take all inputs through scanner Only.
 	 */
+	
 	int noOfGuests;
 	double bookingCost;
 	double foodCost;
@@ -50,7 +51,12 @@ public class Banquet {
 	double totalBaseCost;
 	double totalCost;
 
+	public Banquet () {
+		
+	}
+
 	public double getBaseCost(double bookingCost, double foodCost, double beverageCost, double tip) {
+		
 		this.totalBaseCost = bookingCost + foodCost + beverageCost + tip;
 		return totalBaseCost;
 	}
@@ -60,21 +66,24 @@ public class Banquet {
 		return totalTax;
 	}
 
+	
+
 	public double calculateCess(double totalBaseCost, int noOfGuests) {
+		
 		if (noOfGuests <= 40) {
 			this.serviceCess = totalBaseCost * .04;
 
 		}
 
-		else if (noOfGuests > 40 || noOfGuests <= 80) {
+		else if (noOfGuests > 40 && noOfGuests <= 80) {
 			this.serviceCess = totalBaseCost * .08;
 
 		}
 
-		else if (noOfGuests > 40 || noOfGuests <= 80) {
+		else if (noOfGuests > 40 && noOfGuests <= 80) {
 			this.serviceCess = totalBaseCost * .08;
 
-		} else if (noOfGuests > 80 || noOfGuests <= 150) {
+		} else if (noOfGuests > 80 && noOfGuests <= 150) {
 			this.serviceCess = totalBaseCost * .10;
 
 		} else if (noOfGuests > 150) {
@@ -83,6 +92,7 @@ public class Banquet {
 		}
 		return serviceCess;
 	}
+
 
 	public double CalculateTheTotalCost(double totalBaseCost, double totalTax, double serviceCess) {
 
