@@ -10,12 +10,13 @@ public class MainPrefixSuffix {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Prefix Or Suffix");
 		String word = sc.next();
+
 		if (word.equals("prefix")) {
 			System.out.println("Enter the word : ");
 			String wordPrefix = sc.next();
 			System.out.println("Enter the Prefix : ");
 			String prefix = sc.next();
-			System.out.println(result.prefix(word, prefix));
+			System.out.println(result.isPrefix(wordPrefix, prefix));
 		}
 
 		else if (word.equals("suffix")) {
@@ -23,10 +24,10 @@ public class MainPrefixSuffix {
 			String wordSuffix = sc.next();
 			System.out.println("Enter the Suffix : ");
 			String Suffix = sc.next();
-			System.out.println(result.suffix(word, Suffix));
+			System.out.println(result.isSuffix(wordSuffix, Suffix));
 		} else {
 			System.out.println("invalid statement");
 		}
-
+		sc.close();
 	}
 }

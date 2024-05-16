@@ -10,9 +10,10 @@ public class NameShuffle {
 //				nameShuffle("Donald Trump") ➞ "Trump Donald"
 //				nameShuffle("Seymour Butts") ➞ "Butts Seymour"
 		
-		String nameShuffle="Trump Donald";
+		String nameShuffle="Monkey D Luffy";
 		String[] charArray=nameShuffle.split(" ");
-		System.out.println(charArray[1]+" "+charArray[0]);
+	
+		System.out.println(charArray[1]+" "+charArray[0]+" "+charArray[2]);
 
 	}
 

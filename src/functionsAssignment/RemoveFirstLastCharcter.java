@@ -13,7 +13,10 @@ public class RemoveFirstLastCharcter {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter a word");
 		String word = sc.next();
-		word.substring(word.length());
+		if (word.length()<=2) {
+			System.out.println(word.charAt(0));
+		}else
+	
 		System.out.println(word.substring(1, word.length() - 1));
 		sc.close();
 

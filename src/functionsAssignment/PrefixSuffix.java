@@ -12,7 +12,7 @@ public class PrefixSuffix {
 //	isPrefix("retrospect", "sub-") ➞ false
 //	isSuffix("vocation", "-logy") ➞ false
 
-	public boolean prefix(String enteredWord, String prefix) {
+	public boolean isPrefix(String enteredWord, String prefix) {
 
 		if (enteredWord.startsWith(prefix)) {
 			return true;
@@ -21,7 +21,7 @@ public class PrefixSuffix {
 		return false;
 	}
 
-	public boolean suffix(String enteredWord, String suffix) {
+	public boolean isSuffix(String enteredWord, String suffix) {
 		if (enteredWord.endsWith(suffix)) {
 			return true;
 		}
